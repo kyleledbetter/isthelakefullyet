@@ -1,0 +1,73 @@
+@media (min-width: 401px) {
+  .chart {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .chart {
+    display: flex;
+    justify-content: space-around;
+  }
+  .stats {
+    align-self: center;
+  }
+}
+@media (min-width: 401px) and (max-width: 1120px) {
+  .chart {
+    width: 50%;
+  }
+}
+@media (min-width: 1121px) {
+  .chart {
+    width: 40%;
+  }
+}
+@media (max-height: 901px) {
+  #text {
+    top: 15%;
+  }
+}
+.chart {
+  margin-top: 30px;
+}
+.stats {
+  margin-bottom: 30px;
+}
+.stats__title {
+  font-size: 0.8em;
+}
+.stats__metric {
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.75);
+  text-shadow: 0px -1px 1px rgba(51, 51, 51, .3);
+}
+.stats__total {
+  font-size: 0.5em;
+  color: rgba(255, 255, 255, 0.5);
+  text-shadow: 0px -1px 0px rgba(51, 51, 51, .3);
+}
+.stats__meta {
+  font-size: 0.4em;
+  line-height: 1.6;
+}
+.ct-chart .ct-series.ct-series-b .ct-bar {
+  stroke: rgba(0, 0, 0, 0.3);
+}
+.ct-chart .ct-series.ct-series-a .ct-bar {
+  stroke: rgba(0, 0, 0, 0.1);
+}
+.ct-chart .ct-label {
+  fill: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+}
+.tooltip {
+  position: absolute;
+  display: inline-block;
+  min-width: 5em;
+  padding: .5em;
+  background: #F4C63D;
+  color: #453D3F;
+  font-weight: 700;
+  text-align: center;
+  pointer-events: none;
+  z-index: 1;
+}
