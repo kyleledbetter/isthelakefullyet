@@ -24,7 +24,12 @@ new Chartist.Bar('.ct-chart', {
       return (value) + 'ft';
     }
   }
-}).on('draw', function(data) {
+}, [
+// Options override for media > 400px
+['(max-width: 400px) and (max-height: 785px)', {
+  height: 150
+}]
+]).on('draw', function(data) {
   if(data.type === 'bar') {
     data.element.attr({
       style: 'stroke-width: 100px'

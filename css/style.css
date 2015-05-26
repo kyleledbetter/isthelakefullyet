@@ -97,31 +97,36 @@ body {
     left: 15%;
     width: 70%; } }
 /* Import */
+@media (max-width: 400px) {
+  .chart {
+    flex-direction: column-reverse; }
+
+  #donate {
+    font-size: 12px;
+    bottom: 5px; } }
 @media (min-width: 401px) {
   .chart {
     margin-left: auto;
     margin-right: auto; }
 
   .chart {
-    display: flex;
     justify-content: space-around; }
 
   .stats {
-    align-self: center; } }
+    align-self: center;
+    margin-bottom: 30px; } }
 @media (min-width: 401px) and (max-width: 1120px) {
   .chart {
     width: 50%; } }
 @media (min-width: 1121px) {
   .chart {
     width: 40%; } }
-@media (max-height: 901px) {
+@media (max-height: 938px) {
   #text {
     top: 15%; } }
 .chart {
+  display: flex;
   margin-top: 30px; }
-
-.stats {
-  margin-bottom: 30px; }
 
 .stats__title {
   font-size: 0.8em; }
