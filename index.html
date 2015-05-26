@@ -21,33 +21,44 @@
         <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png" />
         <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png" />
         <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png" />
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
         <link rel="stylesheet" href="css/style.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="js/script.js"></script>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
     </head>
     <body>
-
-        <div id="text">
-          <span id="status">NOPE</span>
-          <span id="remainder"></span>
+      <div id="text">
+        <span id="status">NOPE</span>
+        <span id="remainder"></span>
+        <div class="chart">
+          <div class="ct-chart"></div>
+          <div class="stats">
+            <div class="stats__title">Water Level</div>
+            <div class="stats__metric">655.38 ft</div>
+            <div class="stats__total">of 681 ft</div>
+            <div class="stats__meta">25.62 ft below full pool</div>
+            <div class="stats__meta">61.2% of total capacity</div>
+          </div>
         </div>
-        <div id="donate">
-          <p>
-            Like all Central Texas residents, we're excited to see the lake fill up, but all this rain means there's been some flooding too. Please consider <a href="http://www.adrntx.org/index.php/ways-to-give/central-tx-floods-relief-fund/">donating to the Central TX Floods Relief Fund</a>.
-          </p>
-        </div>
-        <div id="water-level"></div>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      </div>
+      <div id="donate">
+        <p>
+          Like all Central Texas residents, we're excited to see the lake fill up, but all this rain means there's been some flooding too. Please consider <a href="http://www.adrntx.org/index.php/ways-to-give/central-tx-floods-relief-fund/">donating to the Central TX Floods Relief Fund</a>.
+        </p>
+      </div>
+      <div id="water-level"></div>
+      <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+      <script src="js/chart.js"></script>
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-408491-11', 'auto');
-  ga('send', 'pageview');
-
-</script>
+        ga('create', 'UA-408491-11', 'auto');
+        ga('send', 'pageview');
+      </script>
     </body>
 </html>
